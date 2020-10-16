@@ -1,0 +1,23 @@
+{
+  "name": "talk_free",
+  "version": "1.0.0",
+  "description": "A NodeJS, MongoDB and Socket.io tech based chat platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ambujalpha/Talk_Free.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ambujalpha/Talk_Free/issues"
+  },
+  "homepage": "https://github.com/ambujalpha/Talk_Free#readme",
+  "dependencies": {
+    "mongodb": "^3.6.2",
+    "socket.io": "^2.3.0"
+  }
+}
