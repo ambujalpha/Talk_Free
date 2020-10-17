@@ -9,13 +9,13 @@ mongo.connect('mongodb://127.0.0.1/mongochat',function(err,db){
        console.log('MongoDB connected');
 
        //connect to socket.io
-       client.on('connection',function () {
+       client.on('connection',function (socket) {
             let chat=db.collection('chats');
 
             //create function to send status
             sendStatus = function(s){
                 socket.emit('status',s);
-            }
+            };
 
             //get chats from mongo collection
             chat.find().limit(100).sort({_id:1}).toArray(function (err,res) {
